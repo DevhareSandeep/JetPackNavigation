@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/mainFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.jio.jetpacklib.MainFragment"
+            android:label="fragment_main"
+            tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/action_mainFragment_to_snacksFragment"
+                app:destination="@id/snacksFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        <action
+                android:id="@+id/action_mainFragment_to_nonVegFragment"
+                app:destination="@id/nonVegFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+        <action
+                android:id="@+id/action_mainFragment_to_vegFragment"
+                app:destination="@id/vegFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+            android:id="@+id/nonVegFragment"
+            android:name="com.jio.jetpacklib.NonVegFragment"
+            android:label="fragment_non_veg"
+            tools:layout="@layout/fragment_non_veg">
+        <argument
+                android:name="recipient"
+                android:defaultValue="None" />
+        <action
+                android:id="@+id/action_nonVegFragment_to_orderDetailsFragment"
+                app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/snacksFragment"
+            android:name="com.jio.jetpacklib.SnacksFragment"
+            android:label="fragment_snacks"
+            tools:layout="@layout/fragment_snacks">
+          <argument
+                  android:name="recipient"
+                  android:defaultValue="None" />
+        <action
+                android:id="@+id/action_snacksFragment_to_orderDetailsFragment"
+                app:destination="@id/orderDetailsFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+            android:id="@+id/vegFragment"
+            android:name="com.jio.jetpacklib.VegFragment"
+            android:label="fragment_veg"
+            tools:layout="@layout/fragment_veg">
+         <argument
+                 android:name="recipient"
+                 android:defaultValue="None" />
+        <action
+                android:id="@+id/action_vegFragment_to_orderDetailsFragment"
+                app:destination="@id/orderDetailsFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+            android:id="@+id/orderConfirmFragment"
+            android:name="com.jio.jetpacklib.OrderConfirmFragment"
+            android:label="fragment_order_confirm"
+            tools:layout="@layout/fragment_order_confirm">
+        <argument
+                android:name="columnCount"
+                android:defaultValue="1" />
+        <argument
+                android:name="order"
+                app:argType="com.jio.jetpacklib.Order" />
+        <action
+                android:id="@+id/action_orderConfirmFragment_to_orderItemFragment"
+                app:destination="@id/orderItemFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/orderDetailsFragment"
+            android:name="com.jio.jetpacklib.OrderDetailsFragment"
+            android:label="fragment_order_details"
+            tools:layout="@layout/fragment_order_details">
+        <argument
+                android:name="order"
+                app:argType="com.jio.jetpacklib.Order" />
+        <action
+                android:id="@+id/action_orderDetailsFragment_to_orderConfirmFragment"
+                app:destination="@id/orderConfirmFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+            android:id="@+id/orderItemFragment"
+            android:name="com.jio.jetpacklib.OrderItemFragment"
+            android:label="OrderItemFragment"
+            tools:layout="@layout/fragment_order_item_list">
+
+    </fragment>
+</navigation>
