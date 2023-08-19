@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/img_1"
-        tools:context=".MainFragment">
+        tools:context="com.sandeep.jetpack.MainFragment">
 
     <androidx.constraintlayout.widget.Guideline
             android:id="@+id/topguidline"

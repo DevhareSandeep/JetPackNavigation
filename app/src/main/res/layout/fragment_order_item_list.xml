@@ -4,11 +4,11 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".OrderItemFragment">
+        tools:context="com.sandeep.jetpack.OrderItemFragment">
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
-            android:name="com.jio.jetpacklib.OrderItemFragment"
+            android:name="com.sandeep.jetpack.OrderItemFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"

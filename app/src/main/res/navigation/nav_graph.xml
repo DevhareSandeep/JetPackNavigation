@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/mainFragment"
-            android:name="com.jio.jetpacklib.MainFragment"
+            android:name="com.sandeep.jetpack.MainFragment"
             android:label="fragment_main"
             tools:layout="@layout/fragment_main">
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
             android:id="@+id/nonVegFragment"
-            android:name="com.jio.jetpacklib.NonVegFragment"
+            android:name="com.sandeep.jetpack.NonVegFragment"
             android:label="fragment_non_veg"
             tools:layout="@layout/fragment_non_veg">
         <argument
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
             android:id="@+id/snacksFragment"
-            android:name="com.jio.jetpacklib.SnacksFragment"
+            android:name="com.sandeep.jetpack.SnacksFragment"
             android:label="fragment_snacks"
             tools:layout="@layout/fragment_snacks">
           <argument
@@ -62,7 +62,7 @@
     </fragment>
     <fragment
             android:id="@+id/vegFragment"
-            android:name="com.jio.jetpacklib.VegFragment"
+            android:name="com.sandeep.jetpack.VegFragment"
             android:label="fragment_veg"
             tools:layout="@layout/fragment_veg">
          <argument
@@ -78,7 +78,7 @@
     </fragment>
     <fragment
             android:id="@+id/orderConfirmFragment"
-            android:name="com.jio.jetpacklib.OrderConfirmFragment"
+            android:name="com.sandeep.jetpack.OrderConfirmFragment"
             android:label="fragment_order_confirm"
             tools:layout="@layout/fragment_order_confirm">
         <argument
@@ -86,7 +86,7 @@
                 android:defaultValue="1" />
         <argument
                 android:name="order"
-                app:argType="com.jio.jetpacklib.Order" />
+                app:argType="com.sandeep.jetpack.Order" />
         <action
                 android:id="@+id/action_orderConfirmFragment_to_orderItemFragment"
                 app:destination="@id/orderItemFragment" />
@@ -94,12 +94,12 @@
 
     <fragment
             android:id="@+id/orderDetailsFragment"
-            android:name="com.jio.jetpacklib.OrderDetailsFragment"
+            android:name="com.sandeep.jetpack.OrderDetailsFragment"
             android:label="fragment_order_details"
             tools:layout="@layout/fragment_order_details">
         <argument
                 android:name="order"
-                app:argType="com.jio.jetpacklib.Order" />
+                app:argType="com.sandeep.jetpack.Order" />
         <action
                 android:id="@+id/action_orderDetailsFragment_to_orderConfirmFragment"
                 app:destination="@id/orderConfirmFragment"
@@ -110,7 +110,7 @@
     </fragment>
     <fragment
             android:id="@+id/orderItemFragment"
-            android:name="com.jio.jetpacklib.OrderItemFragment"
+            android:name="com.sandeep.jetpack.OrderItemFragment"
             android:label="OrderItemFragment"
             tools:layout="@layout/fragment_order_item_list">
 
