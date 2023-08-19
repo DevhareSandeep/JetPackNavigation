@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">JetPackLib</string>
+    <string name="hotel">Hotel Ruchi</string>
+    <string name="non_veg">Non Veg</string>
+    <string name="veg_veg">Veg</string>
+    <string name="snacks">Snacks</string>
+    <string name="order_details">Order Details</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="snacks_menu">Add Snacks Menu</string>
+    <string name="non_veg_menu">Add Non veg Menu</string>
+    <string name="veg_menu">Add Veg Menu</string>
+    <string name="thanks_for_ordering_from_ruchi_s_resto">Thanks for ordering from Ruchi\'s resto 😋</string>
+    <string name="ruchi_hotel">Ruchi</string>
+    <string name="proceed">Proceed</string>
+    <string name="add_non_veg">Add Non veg</string>
+    <string name="add_snacks">Add Snacks</string>
+    <string name="add_veg">Add veg</string>
+    <string name="add_quantity">Add quantity</string>
+    <string name="visit_again">Visit again 🤝</string>
+    <string name="show_orders">Show Orders</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>
